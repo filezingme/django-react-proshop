@@ -224,10 +224,9 @@ AWS_STORAGE_BUCKET_NAME = 'proshop-bucket-1'
 
 
 if os.getcwd() == '/app':
-#    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#    SECURE_SSL_REDIRECT = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = True
     DEBUG = False
-
 
 #Cái biến môi trương này là đặt mật khẩu truy cập file Notes
 ABOUTSHARE_SECURITY_CODE = os.environ.get('ABOUTSHARE_SECURITY_CODE')
